@@ -1,0 +1,120 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons {
+position: relative;
+}
+.owl-theme .owl-controls .owl-buttons:before, .owl-theme .owl-controls .owl-buttons:after {
+content: '';
+display: block;
+width: 300px;
+height: 2px;
+background: #e3e3e3;
+position: absolute;
+top: 50%;
+margin-top: -1px;
+}
+.owl-theme .owl-controls .owl-buttons:before {
+right: 50%;
+margin-right: 45px;
+}
+.owl-theme .owl-controls .owl-buttons:after {
+left: 50%;
+margin-left: 45px;
+}
+.owl-theme .owl-controls .owl-buttons div{
+font-size: 20px;
+text-align: center;
+line-height: 38px;
+height: 38px;
+width: 38px;
+display: inline-block;
+zoom: 1;
+*display: inline;/*IE7 life-saver */
+margin: 0 3px;
+padding: 0;
+-moz-border-radius: 19px;							/* Mozila Firefox border radius */
+-webkit-border-radius: 19px;	   						/* Safari, Chrome border radius */
+-khtml-border-radius: 19px;	   						/* KHTML border radius */
+-icab-border-radius: 19px;	   						/* icab border radius */
+border-radius: 19px;		   							/* CSS3 Opera border radius */
+-opera-border-radius: 19px;
+-o-border-radius: 19px;
+-border-radius: 19px;
+}
+.owl-theme .owl-controls .owl-buttons div:before {
+font-family: 'FontAwesome';
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev:before {
+content: "\f104";
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next:before {
+content: "\f105";
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{}
+
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-pagination {
+display: inline-block;
+padding: 10px 20px;
+position: relative;
+z-index: 1;
+-moz-border-radius: 17px;							/* Mozila Firefox border radius */
+-webkit-border-radius: 17px;	   						/* Safari, Chrome border radius */
+-khtml-border-radius: 17px;	   						/* KHTML border radius */
+-icab-border-radius: 17px;	   						/* icab border radius */
+border-radius: 17px;		   							/* CSS3 Opera border radius */
+-opera-border-radius: 17px;
+-o-border-radius: 17px;
+-border-radius: 17px;
+}
+.owl-theme .owl-controls .owl-page{
+display: inline-block;
+zoom: 1;
+*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+display: block;
+width: 10px;
+height: 10px;
+padding: 0;
+margin: 0 10px;
+border-width: 2px;
+border-style: solid;
+border-color: transparent;
+-moz-border-radius: 7px;							/* Mozila Firefox border radius */
+-webkit-border-radius: 7px;	   						/* Safari, Chrome border radius */
+-khtml-border-radius: 7px;	   						/* KHTML border radius */
+-icab-border-radius: 7px;	   						/* icab border radius */
+border-radius: 7px;		   							/* CSS3 Opera border radius */
+-opera-border-radius: 7px;
+-o-border-radius: 7px;
+-border-radius: 7px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+}
+
+/* If PaginationNumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url('../images/AjaxLoader.gif') no-repeat center center
+}
